@@ -18,5 +18,22 @@ public class cicli {
         // il while verifica la condizione prima di iniziare
         // il do while fa il primo step e poi verifica la condizione
 
+        // for
+        for (int index = 0; index < 5; index++) {
+            System.out.println("riga" + index);
+            for (int col = 0; col < 5; col++) {
+                System.out.println("colonna" + col);
+                if (col == 4) {
+                    break;
+                }
+            }
+        }
+
+        // enhanced (foreach)
+        int[] numeri = { 10, 20, 30, 40, 50 };
+
+        for (int numero : numeri) {
+            System.out.println(numero);
+        }
     }
 }
