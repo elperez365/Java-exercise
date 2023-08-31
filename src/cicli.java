@@ -24,7 +24,10 @@ public class cicli {
             for (int col = 0; col < 5; col++) {
                 System.out.println("colonna" + col);
                 if (col == 4) {
-                    break;
+                    break; // si ferma qua
+                }
+                if (col == 6) {
+                    continue; // salta questo step e passa al prossimo
                 }
             }
         }
