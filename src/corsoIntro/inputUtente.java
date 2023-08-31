@@ -1,3 +1,5 @@
+package corsoIntro;
+
 import java.util.Scanner; //input dell'utente da terminale
 
 public class inputUtente {

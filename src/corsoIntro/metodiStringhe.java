@@ -1,3 +1,4 @@
+package corsoIntro;
 
 /* equals, equalsIgnoreCase, lenght, charAt,
  * indexOf, isEmpty, toUpperCase, toLowerCase

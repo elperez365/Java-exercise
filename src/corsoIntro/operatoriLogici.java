@@ -1,3 +1,5 @@
+package corsoIntro;
+
 public class operatoriLogici {
     public static void main(String[] args) {
 

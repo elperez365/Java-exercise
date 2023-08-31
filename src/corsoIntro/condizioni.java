@@ -1,3 +1,5 @@
+package corsoIntro;
+
 public class condizioni {
     public static void main(String[] args) {
         /*

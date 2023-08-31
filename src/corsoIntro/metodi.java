@@ -1,3 +1,5 @@
+package corsoIntro;
+
 public class metodi {
     public static void main(String[] args) {
         // utilizzo metodo cucina pranzo
