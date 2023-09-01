@@ -1,0 +1,14 @@
+
+
+-------------MODIFICATORI DI ACCESSO----------------
+
+I MODIFICATORI DI ACCESSO MODIFICANO LO SCOPE IN CUI 
+LE ARIABILI O METODI SONO VISIBILI ALL'INTERNO DEGLI OGGETTI 
+CREATI
+
+
+               in class    in package    in subclass  in world
+public              Y           Y           Y           Y
+protected           Y           Y           Y           
+default             Y           Y
+private             Y           

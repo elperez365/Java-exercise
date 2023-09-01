@@ -48,5 +48,11 @@ public class Main {
 
         Studente studente1 = new Studente("vasco", "rossi", "storia");
 
+        // utilizzo getter e setter
+        PersonaP personaP = new PersonaP("peppe", "caliri");
+        System.out.println(personaP.getNome());
+        personaP.setNome("lillo");
+        System.out.println(personaP.getNome());
+
     }
 }
