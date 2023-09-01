@@ -54,5 +54,18 @@ public class Main {
         personaP.setNome("lillo");
         System.out.println(personaP.getNome());
 
+        // copiare un oggetto
+        // simile a un metodo set
+        // creiamo un metodo copy (vedi classe personaP)
+        PersonaP personaP2 = new PersonaP("Antonio", "nicola");
+        System.out.println(personaP2.getNome());
+        personaP2.copy(personaP);
+        System.out.println(personaP2.getNome());
+
+        // copiare un oggetto tramite costruttore
+
+        PersonaP personaP3 = new PersonaP(personaP2);
+        System.out.println(personaP3.getNome());
+
     }
 }

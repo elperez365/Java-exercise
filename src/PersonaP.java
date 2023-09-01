@@ -10,6 +10,11 @@ public class PersonaP {
         this.cognome = cognome;
     }
 
+    // copiare un oggetto tramite costruttore
+    PersonaP(PersonaP personap) {
+        this.copy(personap);
+    }
+
     // getters
     public String getNome() {
         return nome;
@@ -26,6 +31,13 @@ public class PersonaP {
 
     public void setCognome(String cognome) {
         this.cognome = cognome;
+    }
+
+    // metodo copy
+    // permette di prendere dei dati da un'altro oggetto
+    public void copy(PersonaP personap) {
+        this.setNome(personap.getNome());
+        this.setCognome(personap.getCognome());
     }
 
 }
