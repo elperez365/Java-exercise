@@ -36,5 +36,13 @@ public class Main {
 
         System.out.println(persone2[1]);
 
+        // final e static
+
+        final int prova = 5;
+        // questa variabile non può essere più modificata
+
+        // static è una variabile dichiarata nella classe e lavora da sola
+        // senza valori di input (vedi numeroPersone in persona)
+
     }
 }
