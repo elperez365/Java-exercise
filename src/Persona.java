@@ -14,8 +14,20 @@ public class Persona {
 
     }
 
+    Persona(String nome, String cognome) {
+        this.nome = nome;
+        this.cognome = cognome;
+
+        numeroPersone++;
+
+    }
+
     public String toString() {
         return this.nome + "\n" + this.cognome + "\n" + this.eta;
+    }
+
+    void saluta() {
+        System.out.println("ciao ");
     }
 
     void saluta(Persona personaDaSalutare) {
@@ -24,6 +36,10 @@ public class Persona {
 
     void cammina() {
         System.out.println("sto camminando...");
+    }
+
+    static void mostraNumPersone() {
+        System.out.println("il num delle persone create è:  " + numeroPersone);
     }
 
 }

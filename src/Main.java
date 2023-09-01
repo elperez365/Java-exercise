@@ -41,8 +41,12 @@ public class Main {
         final int prova = 5;
         // questa variabile non può essere più modificata
 
-        // static è una variabile dichiarata nella classe e lavora da sola
+        // static è una variabile o metodo dichiarati nella classe e lavora da sola
         // senza valori di input (vedi numeroPersone in persona)
+
+        Persona.mostraNumPersone();
+
+        Studente studente1 = new Studente("vasco", "rossi");
 
     }
 }
