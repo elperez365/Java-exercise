@@ -1,10 +1,11 @@
 public class Studente extends Persona {
-    String materiaPrederita = "storia";
+    String materiaPreferita;
     String classe = "storia";
     int[] votiStoria = { 9, 9, 9 };
 
-    Studente(String nome, String cognome) {
+    Studente(String nome, String cognome, String materiaPreferita) {
         super(nome, cognome);
+        this.materiaPreferita = materiaPreferita;
 
     }
 

@@ -46,7 +46,7 @@ public class Main {
 
         Persona.mostraNumPersone();
 
-        Studente studente1 = new Studente("vasco", "rossi");
+        Studente studente1 = new Studente("vasco", "rossi", "storia");
 
     }
 }
