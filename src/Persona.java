@@ -12,6 +12,10 @@ public class Persona {
 
     }
 
+    public String toString() {
+        return this.nome + "\n" + this.cognome + "\n" + this.eta;
+    }
+
     void saluta() {
         System.out.println("ciao sono" + nome);
     }

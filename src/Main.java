@@ -8,7 +8,33 @@ public class Main {
         persona1.cammina();
 
         Persona persona2 = new Persona("Anna", "verdi", 51, "verde");
+        Persona persona3 = new Persona("Rita", "galli", 21, "bianco");
 
         System.out.println(persona2.eta);
+
+        // overloaded constructors
+
+        Pizza pizza1 = new Pizza("integrale", "pomodoro", "mozzarella", "ananas");
+        Pizza pizza2 = new Pizza("zerozero", "cipolle");
+
+        System.out.println(pizza1.toString());
+        System.out.println(pizza2.toString());
+        // System.out.println(pizza1.impasto);
+        // System.out.println(pizza2.impasto);
+
+        // array di oggetti
+        Persona[] persone = new Persona[3];
+
+        persone[0] = persona1;
+        persone[1] = persona2;
+        persone[2] = persona3;
+
+        System.out.println(persone[0]);
+
+        // altro metodo per scrivere array di oggetti
+        Persona[] persone2 = { persona1, persona2, persona3 };
+
+        System.out.println(persone2[1]);
+
     }
 }
