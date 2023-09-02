@@ -1,3 +1,7 @@
+import interfacce.Gazzella;
+import interfacce.Leone;
+import interfacce.Pesce;
+
 public class Main {
     public static void main(String[] args) {
         Persona persona1 = new Persona("luca", "rossi", 30, "blu");
@@ -66,6 +70,16 @@ public class Main {
 
         PersonaP personaP3 = new PersonaP(personaP2);
         System.out.println(personaP3.getNome());
+
+        Leone leone = new Leone();
+        Gazzella gazzella = new Gazzella();
+
+        gazzella.scappa();
+        leone.caccia();
+
+        Pesce pesce = new Pesce();
+        pesce.caccia();
+        pesce.scappa();
 
     }
 }
