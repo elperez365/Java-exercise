@@ -1,8 +1,12 @@
+import java.util.Scanner;
+import java.util.InputMismatchException;
+
 import interfacce.Gazzella;
 import interfacce.Leone;
 import interfacce.Pesce;
 
 public class Main {
+
     public static void main(String[] args) {
         Persona persona1 = new Persona("luca", "rossi", 30, "blu");
         // persona1 adesso è un oggetto di tipo persona
@@ -80,6 +84,40 @@ public class Main {
         Pesce pesce = new Pesce();
         pesce.caccia();
         pesce.scappa();
+
+        // polimorfismo
+        Insegnante insegnante = new Insegnante("monica", "rossi", "matematica");
+        Persona[] classe = { studente1, persona2, insegnante };
+        // l'array è formato da uno studente e un'insegnante
+        // possono essere associati alla classe Persona perchè
+        // la loro classe estende Persona
+
+        for (Persona persona : classe) {
+            persona.saluta();
+        }
+
+        // GESTIONE EXCEPTION (errori)
+        Scanner scanner = new Scanner(System.in);
+        try {
+            System.out.println("inserire un numero");
+            int x = scanner.nextInt();
+
+            System.out.println("inserire il secondo numero");
+            int y = scanner.nextInt();
+            int result = x / y;
+            System.out.println("risultato" + result);
+        } catch (ArithmeticException e) {
+            System.out.println("non puoi dividere per zero");
+
+        } catch (InputMismatchException e) {
+            System.out.println("non puoi dividere un numero per una stringa");
+        } catch (Exception e) {
+            System.out.println("C'è stato un errore");
+
+        } finally {
+            System.out.println("a prescindere eseguito lo stesso");
+            scanner.close();
+        }
 
     }
 }
