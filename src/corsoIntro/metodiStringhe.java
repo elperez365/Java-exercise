@@ -42,6 +42,10 @@ public class metodiStringhe {
         // con il carattere indicato nel secondo input
         // ogni volta che ne incontra uno nella stringa
 
+        String[] risultato11 = nome.split(" ");
+        // trasforma la stringa frase in
+        // un'array di parole della frase
+
         System.out.println(risultato);
         System.out.println(risultato2);
         System.out.println(risultato3);
@@ -52,6 +56,7 @@ public class metodiStringhe {
         System.out.println(risultato8);
         System.out.println(risultato9);
         System.out.println(risultato10);
+        System.out.println(risultato11[0]);
 
     }
 }
